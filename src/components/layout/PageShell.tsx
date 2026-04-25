@@ -27,7 +27,7 @@ export function PageShell({
     <div className="min-h-screen bg-brand-cream font-body text-brand-taupe">
       <Header brand={brand} navigation={navigation} primaryCta={primaryCta} />
       <main>{children}</main>
-      <Footer content={footer} />
+      <Footer brand={brand} navigation={navigation} content={footer} />
     </div>
   );
 }
