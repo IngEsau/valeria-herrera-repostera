@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #7c6f64;
+    background-color: #fdf5f0;
+    font-family: "Inter", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fdf5f0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Fraunces", serif;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  ::selection {
+    background-color: rgba(150, 126, 223, 0.28);
+  }
+}
+
+@layer components {
+  .hero-image-overlay {
+    background: linear-gradient(
+      90deg,
+      #FDF5F0 0%,
+      rgba(253, 245, 240, 0.7) 40%,
+      rgba(253, 245, 240, 0) 100%
+    );
+  }
+
+  .hero-image-overlay-mobile {
+    background: linear-gradient(
+      90deg,
+      #FDF5F0 0%,
+      rgba(253, 245, 240, 0.4) 50%,
+      rgba(253, 245, 240, 0) 100%
+    );
+  }
+}

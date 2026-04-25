@@ -1,0 +1,86 @@
+{
+  "brand": {
+    "name": "Valeria Herrera",
+    "descriptor": "Repostería artesanal",
+    "primaryColor": "#967EDF",
+    "accentColor": "#D97706",
+    "textColor": "#7C6F64",
+    "backgroundColor": "#FDF5F0",
+    "headingFont": "Fraunces",
+    "bodyFont": "Inter",
+    "logo": "/images/brand/logo-horizontal.svg",
+    "logoAlt": "Valeria Herrera",
+    "isotype": "/images/brand/isotype.svg"
+  },
+  "navigation": [
+    {
+      "label": "Inicio",
+      "href": "#inicio"
+    },
+    {
+      "label": "Acerca de mí",
+      "href": "#acerca"
+    },
+    {
+      "label": "Destacados",
+      "href": "#destacados"
+    },
+    {
+      "label": "Contacto",
+      "href": "#contacto"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Repostería artesanal hecha con cuidado",
+    "title": "Dulzura que inspira",
+    "description": "Postres artesanales pensados para compartir momentos especiales, con una presentación cuidada y un sabor que transmite calidez, detalle y dedicación.",
+    "primaryCta": {
+      "label": "Haz tu pedido por WhatsApp",
+      "href": "https://wa.me/5212221845391"
+    },
+    "secondaryCta": {
+      "label": "Ver más en Instagram",
+      "href": "https://www.instagram.com/vh.repostera/"
+    },
+    "heroImage": "/images/hero/hero-cake.jpg",
+    "heroImageAlt": "Postre artesanal de Valeria Herrera"
+  },
+  "about": {
+    "sectionId": "acerca",
+    "eyebrow": "Acerca de mí",
+    "title": "Pasión por la repostería",
+    "description": "Cada postre nace desde una intención simple: crear algo hermoso, cálido y delicioso. La marca busca transmitir cercanía, dedicación y una experiencia visual tan cuidada como el producto final.",
+    "secondaryText": "Valeria Herrera Repostería combina identidad artesanal, detalle visual y una presentación limpia para construir confianza desde el primer vistazo.",
+    "image": "/images/about/about-valeria.jpg",
+    "imageAlt": "Valeria Herrera preparando repostería",
+    "cta": {
+      "label": "Conoce más",
+      "href": "https://www.instagram.com/vh.repostera/"
+    }
+  },
+  "featuredProducts": {
+    "sectionId": "destacados",
+    "eyebrow": "Productos destacados",
+    "title": "Selección especial",
+    "description": "Una muestra de los postres más representativos de la marca, pensados para comunicar estilo, sabor y cuidado artesanal."
+  },
+  "contact": {
+    "sectionId": "contacto",
+    "title": "Hablemos de tu pedido",
+    "description": "Si tienes una idea, una fecha especial o quieres conocer disponibilidad, escríbeme y con gusto te ayudo.",
+    "primaryCta": {
+      "label": "Escribir por WhatsApp",
+      "href": "https://wa.me/5212221845391"
+    },
+    "secondaryCta": {
+      "label": "Ir a Instagram",
+      "href": "https://www.instagram.com/vh.repostera/"
+    }
+  },
+  "footer": {
+    "brandLine": "Valeria Herrera Repostería",
+    "copyright": "© 2026 Valeria Herrera. Todos los derechos reservados.",
+    "instagramUrl": "https://www.instagram.com/vh.repostera/",
+    "whatsappUrl": "https://wa.me/5212221845391"
+  }
+}

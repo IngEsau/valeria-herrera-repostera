@@ -1,0 +1,42 @@
+[
+  {
+    "id": "product-01",
+    "name": "Cheesecake de frutos rojos",
+    "description": "Textura cremosa, base suave y un contraste fresco de frutos rojos.",
+    "price": "$420 MXN",
+    "image": "/images/products/cheesecake-frutos-rojos.jpg",
+    "imageAlt": "Cheesecake de frutos rojos",
+    "ctaLabel": "Pedir por WhatsApp",
+    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20me%20interesa%20el%20Cheesecake%20de%20frutos%20rojos"
+  },
+  {
+    "id": "product-02",
+    "name": "Mini cakes personalizados",
+    "description": "Diseños delicados para celebraciones especiales con acabado artesanal.",
+    "price": "$380 MXN",
+    "image": "/images/products/mini-cakes.jpg",
+    "imageAlt": "Mini cakes personalizados",
+    "ctaLabel": "Pedir por WhatsApp",
+    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20me%20interesan%20los%20mini%20cakes%20personalizados"
+  },
+  {
+    "id": "product-03",
+    "name": "Caja de brownies",
+    "description": "Brownies intensos y húmedos con presentación ideal para regalo o mesa dulce.",
+    "price": "$260 MXN",
+    "image": "/images/products/brownies.jpg",
+    "imageAlt": "Caja de brownies",
+    "ctaLabel": "Pedir por WhatsApp",
+    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20me%20interesa%20la%20caja%20de%20brownies"
+  },
+  {
+    "id": "product-04",
+    "name": "Pastel de temporada",
+    "description": "Propuesta especial con decoración cuidada y sabor pensado para la ocasión.",
+    "price": "$480 MXN",
+    "image": "/images/products/pastel-temporada.jpg",
+    "imageAlt": "Pastel de temporada",
+    "ctaLabel": "Pedir por WhatsApp",
+    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20me%20interesa%20el%20pastel%20de%20temporada"
+  }
+]
