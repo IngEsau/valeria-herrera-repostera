@@ -1,4 +1,5 @@
 import type { HeroContent } from "../../types/content";
+import { InstagramIcon, WhatsAppIcon } from "../ui/BrandIcons";
 import { ButtonLink } from "../ui/ButtonLink";
 
 type HeroSectionProps = {
@@ -13,19 +14,19 @@ export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section id="inicio" className="relative isolate overflow-hidden bg-[#FDF5F0]">
       {/* Mobile image layer */}
-      <div className="pointer-events-none absolute bottom-0 inset-x-0 z-0 h-[470px] overflow-hidden sm:h-[500px] lg:hidden">
+      <div className="pointer-events-none absolute bottom-0 inset-x-0 z-0 h-[650px] overflow-hidden sm:h-[680px] lg:hidden">
         <img
           src={content.heroImage}
           alt={content.heroImageAlt}
-          className="absolute inset-0 z-0 h-full w-full object-cover object-[78%_center] sm:object-[74%_center]"
+          className="absolute inset-0 z-0 h-full w-full object-cover object-[76%_42%] sm:object-[72%_42%]"
         />
-        <div className="absolute inset-x-0 top-0 z-[1] h-44 bg-gradient-to-b from-[#FDF5F0] via-[#FDF5F0]/60 to-transparent sm:h-48" />
+        <div className="absolute inset-x-0 top-0 z-[1] h-60 bg-gradient-to-b from-[#FDF5F0] via-[#FDF5F0]/60 to-transparent sm:h-64" />
         <div className="absolute inset-y-0 left-0 z-[1] w-[72%] bg-gradient-to-r from-[#FDF5F0] via-[#FDF5F0]/45 to-transparent sm:w-[62%]" />
         <div className="absolute inset-x-0 bottom-0 z-[1] h-24 bg-gradient-to-t from-[#FDF5F0] via-[#FDF5F0]/20 to-transparent" />
       </div>
 
       {/* Mobile content */}
-      <div className="relative z-10 flex flex-col px-5 pb-[430px] pt-20 sm:px-10 sm:pb-[455px] sm:pt-20 lg:hidden">
+      <div className="relative z-10 flex flex-col px-5 pb-[455px] pt-12 sm:px-10 sm:pb-[480px] sm:pt-12 lg:hidden">
         <div className="relative z-10 w-full max-w-[34rem]">
           <p className="mb-4 font-body text-xs font-semibold uppercase text-brand-lavender sm:text-sm">
             {content.eyebrow}
@@ -48,10 +49,11 @@ export function HeroSection({ content }: HeroSectionProps) {
         </div>
       </div>
 
-      <div className="absolute inset-x-5 bottom-8 z-10 flex flex-col gap-2.5 sm:inset-x-10 sm:bottom-10 sm:flex-row sm:gap-3 lg:hidden">
+      <div className="absolute inset-x-5 bottom-3 z-10 flex flex-col gap-2 sm:inset-x-10 sm:bottom-5 sm:flex-row sm:gap-3 lg:hidden">
         <ButtonLink
           href={content.primaryCta.href}
           className="!min-h-11 !py-2.5 w-full px-6 sm:w-auto"
+          icon={<WhatsAppIcon className="size-4 text-white" />}
         >
           {content.primaryCta.label}
         </ButtonLink>
@@ -59,6 +61,7 @@ export function HeroSection({ content }: HeroSectionProps) {
           href={content.secondaryCta.href}
           variant="secondary"
           className="!min-h-11 !py-2.5 w-full px-6 sm:w-auto"
+          icon={<InstagramIcon className="size-4" />}
         >
           {content.secondaryCta.label}
         </ButtonLink>
@@ -87,10 +90,18 @@ export function HeroSection({ content }: HeroSectionProps) {
             {content.description}
           </p>
           <div className="mt-9 flex flex-row gap-3">
-            <ButtonLink href={content.primaryCta.href} className="px-8">
+            <ButtonLink
+              href={content.primaryCta.href}
+              className="px-8"
+              icon={<WhatsAppIcon className="size-4 text-white" />}
+            >
               {content.primaryCta.label}
             </ButtonLink>
-            <ButtonLink href={content.secondaryCta.href} variant="secondary">
+            <ButtonLink
+              href={content.secondaryCta.href}
+              variant="secondary"
+              icon={<InstagramIcon className="size-4" />}
+            >
               {content.secondaryCta.label}
             </ButtonLink>
           </div>
@@ -103,11 +114,11 @@ export function HeroSection({ content }: HeroSectionProps) {
           <img
             src={content.heroImage}
             alt={content.heroImageAlt}
-            className="h-full w-full object-cover object-[64%_center]"
+            className="h-full w-full object-cover object-[100%_center]"
           />
         </div>
-        <div className="absolute inset-y-0 left-0 z-[1] w-[46%] bg-gradient-to-r from-[#FDF5F0] via-[#FDF5F0]/75 to-transparent" />
-        <div className="absolute inset-x-0 top-0 z-[1] h-32 bg-gradient-to-b from-[#FDF5F0]/70 to-transparent" />
+        <div className="absolute inset-y-0 left-0 z-[1] w-[48%] bg-gradient-to-r from-[#FDF5F0] via-[#FDF5F0]/75 to-transparent" />
+        <div className="absolute inset-x-0 top-0 z-[1] " />
       </div>
     </section>
   );
