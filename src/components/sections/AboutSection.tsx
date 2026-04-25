@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import type { AboutContent } from "../../types/content";
 import { ButtonLink } from "../ui/ButtonLink";
 import { Container } from "../ui/Container";
@@ -37,7 +38,12 @@ export function AboutSection({ content }: AboutSectionProps) {
             {content.secondaryText}
           </p>
           <div className="mt-8">
-            <ButtonLink href={content.cta.href} variant="quiet">
+            <ButtonLink
+              href={content.cta.href}
+              variant="quiet"
+              icon={<ArrowUpRight className="size-4" strokeWidth={2} />}
+              iconPosition="right"
+            >
               {content.cta.label}
             </ButtonLink>
           </div>
