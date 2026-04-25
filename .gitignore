@@ -9,3 +9,5 @@ vite.config.d.ts
 *.log
 .DS_Store
 .ai/system-prompt.md
+.env.local
+.env.deploy
