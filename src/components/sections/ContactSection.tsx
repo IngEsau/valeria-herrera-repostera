@@ -1,4 +1,5 @@
 import type { ContactContent } from "../../types/content";
+import { InstagramIcon, WhatsAppIcon } from "../ui/BrandIcons";
 import { ButtonLink } from "../ui/ButtonLink";
 import { Container } from "../ui/Container";
 
@@ -18,10 +19,17 @@ export function ContactSection({ content }: ContactSectionProps) {
             {content.description}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <ButtonLink href={content.primaryCta.href}>
+            <ButtonLink
+              href={content.primaryCta.href}
+              icon={<WhatsAppIcon className="size-4 text-white" />}
+            >
               {content.primaryCta.label}
             </ButtonLink>
-            <ButtonLink href={content.secondaryCta.href} variant="secondary">
+            <ButtonLink
+              href={content.secondaryCta.href}
+              variant="secondary"
+              icon={<InstagramIcon className="size-4" />}
+            >
               {content.secondaryCta.label}
             </ButtonLink>
           </div>

@@ -1,4 +1,5 @@
 import type { FeaturedProduct } from "../../types/content";
+import { WhatsAppIcon } from "./BrandIcons";
 import { ButtonLink } from "./ButtonLink";
 
 type ProductCardProps = {
@@ -31,7 +32,12 @@ export function ProductCard({ product }: ProductCardProps) {
               {product.price}
             </p>
           ) : null}
-          <ButtonLink href={product.ctaHref} variant="quiet" className="px-0">
+          <ButtonLink
+            href={product.ctaHref}
+            variant="quiet"
+            className="px-0"
+            icon={<WhatsAppIcon className="size-4" />}
+          >
             {product.ctaLabel}
           </ButtonLink>
         </div>

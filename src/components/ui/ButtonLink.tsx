@@ -5,6 +5,8 @@ type ButtonVariant = "primary" | "secondary" | "quiet";
 type ButtonLinkProps = {
   children: ReactNode;
   href?: string;
+  icon?: ReactNode;
+  iconPosition?: "left" | "right";
   variant?: ButtonVariant;
   className?: string;
 };
@@ -21,6 +23,8 @@ const variantClasses: Record<ButtonVariant, string> = {
 export function ButtonLink({
   children,
   href,
+  icon,
+  iconPosition = "left",
   variant = "primary",
   className = "",
 }: ButtonLinkProps) {
@@ -30,7 +34,7 @@ export function ButtonLink({
 
   const isExternal = href.startsWith("http");
   const baseClasses =
-    "inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-center font-body text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
+    "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 py-3 text-center font-body text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
 
   return (
     <a
@@ -39,7 +43,17 @@ export function ButtonLink({
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noreferrer" : undefined}
     >
-      {children}
+      {icon && iconPosition === "left" ? (
+        <span className="shrink-0" aria-hidden="true">
+          {icon}
+        </span>
+      ) : null}
+      <span>{children}</span>
+      {icon && iconPosition === "right" ? (
+        <span className="shrink-0" aria-hidden="true">
+          {icon}
+        </span>
+      ) : null}
     </a>
   );
 }
