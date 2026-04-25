@@ -9,6 +9,7 @@ export type BrandConfig = {
   bodyFont: string;
   logo?: string;
   logoAlt?: string;
+  logoStacked?: string;
   isotype?: string;
 };
 

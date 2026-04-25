@@ -10,6 +10,7 @@
     "bodyFont": "Inter",
     "logo": "/images/brand/logo-horizontal.svg",
     "logoAlt": "Valeria Herrera",
+    "logoStacked": "/images/brand/logo-stacked.svg",
     "isotype": "/images/brand/isotype.svg"
   },
   "navigation": [
@@ -31,11 +32,11 @@
     }
   ],
   "hero": {
-    "eyebrow": "Repostería artesanal hecha con cuidado",
+    "eyebrow": "Repostería artesanal",
     "title": "Dulzura que inspira",
     "description": "Postres artesanales pensados para compartir momentos especiales, con una presentación cuidada y un sabor que transmite calidez, detalle y dedicación.",
     "primaryCta": {
-      "label": "Haz tu pedido por WhatsApp",
+      "label": "Contáctame",
       "href": "https://wa.me/5212221845391"
     },
     "secondaryCta": {
@@ -78,7 +79,7 @@
     }
   },
   "footer": {
-    "brandLine": "Valeria Herrera Repostería",
+    "brandLine": "Valeria Herrera",
     "copyright": "© 2026 Valeria Herrera. Todos los derechos reservados.",
     "instagramUrl": "https://www.instagram.com/vh.repostera/",
     "whatsappUrl": "https://wa.me/5212221845391"
