@@ -93,7 +93,6 @@ La primera versión del proyecto incluye:
 - Carrito de compras
 - Checkout
 - Pasarela de pago
-- Panel administrativo
 - CMS
 - Autenticación
 - Backend propio
