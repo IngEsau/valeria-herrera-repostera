@@ -11,7 +11,34 @@ if [[ ! -f "$ENV_FILE" ]]; then
   exit 1
 fi
 
-source "$ENV_FILE"
+while IFS= read -r line || [[ -n "$line" ]]; do
+  line="${line%$'\r'}"
+
+  if [[ -z "$line" || "$line" == \#* || "$line" != *=* ]]; then
+    continue
+  fi
+
+  key="${line%%=*}"
+  value="${line#*=}"
+
+  case "$key" in
+    FTP_HOST|FTP_USER|FTP_PASS|FTP_DIR)
+      if [[ ${#value} -ge 2 ]]; then
+        first_character="${value:0:1}"
+        last_character="${value: -1}"
+
+        if [[
+          ("$first_character" == '"' && "$last_character" == '"') ||
+          ("$first_character" == "'" && "$last_character" == "'")
+        ]]; then
+          value="${value:1:${#value}-2}"
+        fi
+      fi
+
+      printf -v "$key" '%s' "$value"
+      ;;
+  esac
+done < "$ENV_FILE"
 
 for variable in FTP_HOST FTP_USER FTP_PASS FTP_DIR; do
   if [[ -z "${!variable:-}" ]]; then
