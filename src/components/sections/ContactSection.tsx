@@ -1,3 +1,4 @@
+import { Mail } from "lucide-react";
 import type { ContactContent } from "../../types/content";
 import { InstagramIcon, WhatsAppIcon } from "../ui/BrandIcons";
 import { ButtonLink } from "../ui/ButtonLink";
@@ -33,6 +34,15 @@ export function ContactSection({ content }: ContactSectionProps) {
               {content.secondaryCta.label}
             </ButtonLink>
           </div>
+          {content.emailCta.href ? (
+            <a
+              href={content.emailCta.href}
+              className="mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-3 font-body text-sm font-semibold text-white underline decoration-white/50 underline-offset-4 transition hover:decoration-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              <Mail className="size-4" strokeWidth={2} aria-hidden="true" />
+              <span>{content.emailCta.label}</span>
+            </a>
+          ) : null}
         </div>
       </Container>
     </section>

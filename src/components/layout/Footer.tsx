@@ -1,3 +1,4 @@
+import { Mail } from "lucide-react";
 import type {
   BrandConfig,
   FooterContent,
@@ -66,6 +67,14 @@ export function Footer({ brand, navigation, content }: FooterProps) {
               icon={<WhatsAppIcon className="size-4" />}
             >
               WhatsApp
+            </ButtonLink>
+            <ButtonLink
+              href={content.emailUrl}
+              variant="quiet"
+              className="max-w-full px-0"
+              icon={<Mail className="size-4" strokeWidth={2} />}
+            >
+              {content.emailUrl?.replace("mailto:", "")}
             </ButtonLink>
             <ButtonLink
               href={content.instagramUrl}

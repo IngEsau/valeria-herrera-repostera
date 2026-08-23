@@ -48,12 +48,24 @@
   },
   "about": {
     "sectionId": "acerca",
-    "eyebrow": "Acerca de mí",
-    "title": "Pasión por la repostería",
-    "description": "Cada postre nace desde una intención simple: crear algo hermoso, cálido y delicioso. La marca busca transmitir cercanía, dedicación y una experiencia visual tan cuidada como el producto final.",
-    "secondaryText": "Valeria Herrera Repostería combina identidad artesanal, detalle visual y una presentación limpia para construir confianza desde el primer vistazo.",
-    "image": "/images/about/about-valeria.jpg",
-    "imageAlt": "Valeria Herrera preparando repostería",
+    "eyebrow": "Acerca del trabajo",
+    "title": "Repostería hecha para celebrar",
+    "description": "El trabajo de Valeria reúne pasteles personalizados, tartas, pan dulce y piezas saladas preparadas para distintos momentos y celebraciones.",
+    "secondaryText": "Fruta fresca, acabados de chocolate, hojaldres laminados y presentaciones para regalo forman parte de una propuesta artesanal que se reconoce en cada detalle.",
+    "gallery": [
+      {
+        "image": "/images/products/pastel-graduacion2.jpeg",
+        "imageAlt": "Pastel personalizado de graduación con frutos rojos"
+      },
+      {
+        "image": "/images/products/tartaletas-limon.jpeg",
+        "imageAlt": "Tartaletas de limón con merengue tostado"
+      },
+      {
+        "image": "/images/products/brownies-caja.jpeg",
+        "imageAlt": "Caja de regalo para brownies con lazo satinado"
+      }
+    ],
     "cta": {
       "label": "Conoce más",
       "href": "https://www.instagram.com/vh.repostera/"
@@ -63,12 +75,23 @@
     "sectionId": "destacados",
     "eyebrow": "Productos destacados",
     "title": "Selección especial",
-    "description": "Una muestra de los postres más representativos de la marca, pensados para comunicar estilo, sabor y cuidado artesanal."
+    "description": "Tres trabajos que muestran la variedad de acabados, formatos y presentaciones disponibles.",
+    "catalog": {
+      "sectionId": "catalogo",
+      "eyebrow": "Catálogo",
+      "title": "Más productos artesanales",
+      "description": "Conoce la selección de pasteles, tartas, panadería, repostería y piezas saladas disponibles para cotizar."
+    },
+    "quote": {
+      "priceLabel": "Precio estimado por pieza",
+      "emailAddress": "info@valeriaherrera.buxdev.com",
+      "emailCtaLabel": "Cotizar por correo"
+    }
   },
   "contact": {
     "sectionId": "contacto",
     "title": "Hablemos de tu pedido",
-    "description": "Si tienes una idea, una fecha especial o quieres conocer disponibilidad, escríbeme y con gusto te ayudo.",
+    "description": "Consulta disponibilidad, presentación y precio final de la pieza que necesitas. Puedes escribir por WhatsApp o correo.",
     "primaryCta": {
       "label": "Escribir por WhatsApp",
       "href": "https://wa.me/5212221845391"
@@ -76,12 +99,17 @@
     "secondaryCta": {
       "label": "Ir a Instagram",
       "href": "https://www.instagram.com/vh.repostera/"
+    },
+    "emailCta": {
+      "label": "info@valeriaherrera.buxdev.com",
+      "href": "mailto:info@valeriaherrera.buxdev.com"
     }
   },
   "footer": {
     "brandLine": "Valeria Herrera",
     "copyright": "© 2026 Valeria Herrera. Todos los derechos reservados.",
     "instagramUrl": "https://www.instagram.com/vh.repostera/",
-    "whatsappUrl": "https://wa.me/5212221845391"
+    "whatsappUrl": "https://wa.me/5212221845391",
+    "emailUrl": "mailto:info@valeriaherrera.buxdev.com"
   }
 }

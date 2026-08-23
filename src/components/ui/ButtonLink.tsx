@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "quiet";
+type ButtonVariant = "primary" | "secondary" | "accent" | "quiet";
 
 type ButtonLinkProps = {
   children: ReactNode;
@@ -16,6 +16,8 @@ const variantClasses: Record<ButtonVariant, string> = {
     "bg-brand-cta text-white shadow-soft hover:bg-brand-cta/90 focus-visible:outline-brand-cta",
   secondary:
     "border border-brand-lavender/45 bg-white/65 text-brand-taupe hover:border-brand-lavender hover:bg-white focus-visible:outline-brand-lavender",
+  accent:
+    "bg-brand-lavender text-white shadow-soft hover:bg-brand-lavender/90 focus-visible:outline-brand-lavender",
   quiet:
     "text-brand-taupe underline decoration-brand-lavender/45 underline-offset-4 hover:text-brand-cta focus-visible:outline-brand-lavender",
 };

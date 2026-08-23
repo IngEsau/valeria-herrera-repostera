@@ -33,15 +33,32 @@ export type HeroContent = {
   heroImageAlt: string;
 };
 
+export type AboutGalleryItem = {
+  image: string;
+  imageAlt: string;
+};
+
 export type AboutContent = {
   sectionId: string;
   eyebrow: string;
   title: string;
   description: string;
   secondaryText: string;
-  image: string;
-  imageAlt: string;
+  gallery: AboutGalleryItem[];
   cta: Cta;
+};
+
+export type CatalogContent = {
+  sectionId: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+};
+
+export type ProductQuoteContent = {
+  priceLabel: string;
+  emailAddress: string;
+  emailCtaLabel: string;
 };
 
 export type FeaturedProductsContent = {
@@ -49,6 +66,8 @@ export type FeaturedProductsContent = {
   eyebrow: string;
   title: string;
   description: string;
+  catalog: CatalogContent;
+  quote: ProductQuoteContent;
 };
 
 export type ContactContent = {
@@ -57,6 +76,7 @@ export type ContactContent = {
   description: string;
   primaryCta: Cta;
   secondaryCta: Cta;
+  emailCta: Cta;
 };
 
 export type FooterContent = {
@@ -64,6 +84,7 @@ export type FooterContent = {
   copyright: string;
   instagramUrl?: string;
   whatsappUrl?: string;
+  emailUrl?: string;
 };
 
 export type SiteConfig = {
@@ -79,10 +100,12 @@ export type SiteConfig = {
 export type FeaturedProduct = {
   id: string;
   name: string;
+  category: string;
   description: string;
-  price?: string;
+  price: string;
   image: string;
   imageAlt: string;
   ctaLabel: string;
   ctaHref: string;
+  featured: boolean;
 };
