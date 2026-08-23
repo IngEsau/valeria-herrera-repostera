@@ -35,23 +35,23 @@ export function AboutSection({ content }: AboutSectionProps) {
         </div>
 
         <div className="max-w-2xl">
-          <div className="mb-5 flex items-center gap-4 sm:gap-5">
+          <div className="mb-7 flex items-center gap-4 sm:mb-8 sm:gap-5">
             <span className="h-px flex-1 bg-brand-taupe/35" />
-            <h2 className="shrink-0 text-center text-3xl font-semibold leading-tight text-brand-taupe sm:text-4xl">
+            <h2 className="shrink-0 text-center text-3xl font-semibold leading-snug text-brand-taupe sm:text-4xl">
               {content.eyebrow}
             </h2>
             <span className="h-px flex-1 bg-brand-taupe/35" />
           </div>
-          <p className="font-heading text-xl font-semibold leading-snug text-brand-lavender sm:text-2xl">
+          <p className="font-heading text-xl font-semibold leading-8 text-brand-lavender sm:text-2xl">
             {content.title}
           </p>
-          <p className="mt-5 text-base leading-7 text-brand-taupe/85 sm:text-lg sm:leading-8">
+          <p className="mt-7 text-base leading-8 text-brand-taupe/85 sm:text-lg">
             {content.description}
           </p>
-          <p className="mt-4 text-base leading-7 text-brand-taupe/85 sm:leading-8">
+          <p className="mt-6 text-base leading-8 text-brand-taupe/85">
             {content.secondaryText}
           </p>
-          <div className="mt-7">
+          <div className="mt-9">
             <ButtonLink
               href={content.cta.href}
               variant="accent"
