@@ -23,9 +23,18 @@ export type Cta = {
   href?: string;
 };
 
+export type HeroTitleVariant = {
+  firstLine: string;
+  secondLine: string;
+  accent: string;
+};
+
 export type HeroContent = {
   eyebrow: string;
-  title: string;
+  title: {
+    desktop: HeroTitleVariant;
+    mobile: HeroTitleVariant;
+  };
   description: string;
   primaryCta: Cta;
   secondaryCta: Cta;

@@ -60,7 +60,7 @@ export function Header({ brand, navigation, primaryCta }: HeaderProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-brand-lavender/10 bg-brand-cream/95 backdrop-blur">
+    <header className="sticky top-0 z-30 bg-brand-cream lg:border-b lg:border-brand-lavender/10 lg:bg-brand-cream/95 lg:backdrop-blur">
       <Container className="py-5">
         <div className="flex items-center justify-between gap-5 lg:hidden">
           <BrandLogo brand={brand} />

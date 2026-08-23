@@ -32,15 +32,26 @@
     }
   ],
   "hero": {
-    "eyebrow": "Repostería artesanal",
-    "title": "Dulzura que inspira",
-    "description": "Postres artesanales pensados para compartir momentos especiales, con una presentación cuidada y un sabor que transmite calidez, detalle y dedicación.",
+    "eyebrow": "Dulzura que inspira",
+    "title": {
+      "desktop": {
+        "firstLine": "Postres artesanales",
+        "secondLine": "para momentos",
+        "accent": "especiales"
+      },
+      "mobile": {
+        "firstLine": "Postres artesanales",
+        "secondLine": "para",
+        "accent": "celebrar"
+      }
+    },
+    "description": "Cada pieza está hecha con detalle, sabor y calidez para acompañar tus momentos especiales.",
     "primaryCta": {
-      "label": "Contáctame",
+      "label": "Hacer un pedido",
       "href": "https://wa.me/5212221845391"
     },
     "secondaryCta": {
-      "label": "Ver más en Instagram",
+      "label": "Ver Instagram",
       "href": "https://www.instagram.com/vh.repostera/"
     },
     "heroImage": "/images/hero/hero-cake.jpg",
