@@ -62,6 +62,7 @@ export type CatalogContent = {
   eyebrow: string;
   title: string;
   description: string;
+  pageSize: number;
 };
 
 export type ProductQuoteContent = {
@@ -112,9 +113,11 @@ export type FeaturedProduct = {
   category: string;
   description: string;
   price: string;
+  priceAmount: number;
   image: string;
   imageAlt: string;
   ctaLabel: string;
   ctaHref: string;
   featured: boolean;
+  catalogLast?: boolean;
 };

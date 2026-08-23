@@ -91,10 +91,11 @@
       "sectionId": "catalogo",
       "eyebrow": "Catálogo",
       "title": "Más productos artesanales",
-      "description": "Conoce la selección de pasteles, tartas, panadería, repostería y piezas saladas disponibles para cotizar."
+      "description": "Conoce la selección de pasteles, tartas, panadería, repostería y piezas saladas disponibles para cotizar.",
+      "pageSize": 6
     },
     "quote": {
-      "priceLabel": "Precio estimado por pieza",
+      "priceLabel": "Precio de referencia por pieza; el monto final se confirma al cotizar.",
       "emailAddress": "info@valeriaherrera.buxdev.com",
       "emailCtaLabel": "Cotizar por correo"
     }
