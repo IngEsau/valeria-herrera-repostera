@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, UsersRound } from "lucide-react";
 import type {
   FeaturedProduct,
   ProductQuoteContent,
@@ -35,6 +35,14 @@ export function ProductCard({ product, quote }: ProductCardProps) {
           </h3>
           <p className="mt-3 text-sm leading-7 text-brand-taupe/80">
             {product.description}
+          </p>
+          <p className="mt-4 flex items-center gap-2 font-body text-sm font-medium text-brand-taupe/85">
+            <UsersRound
+              className="size-4 shrink-0 text-brand-lavender"
+              strokeWidth={2}
+              aria-hidden="true"
+            />
+            {product.servings}
           </p>
         </div>
         <div className="mt-6 border-t border-brand-lavender/15 pt-5">

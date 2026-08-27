@@ -114,6 +114,7 @@ export type FeaturedProduct = {
   description: string;
   price: string;
   priceAmount: number;
+  servings: string;
   image: string;
   imageAlt: string;
   ctaLabel: string;

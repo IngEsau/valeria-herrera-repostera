@@ -65,15 +65,15 @@
     "secondaryText": "Fruta fresca, acabados de chocolate, hojaldres laminados y presentaciones para regalo forman parte de una propuesta artesanal que se reconoce en cada detalle.",
     "gallery": [
       {
-        "image": "/images/products/pastel-graduacion2.jpeg",
+        "image": "/images/products/editorial/pastel-graduacion.webp",
         "imageAlt": "Pastel personalizado de graduación con frutos rojos"
       },
       {
-        "image": "/images/products/tartaletas-limon.jpeg",
+        "image": "/images/products/editorial/tartaletas-limon.webp",
         "imageAlt": "Tartaletas de limón con merengue tostado"
       },
       {
-        "image": "/images/products/brownies-caja.jpeg",
+        "image": "/images/products/editorial/brownies-caja.webp",
         "imageAlt": "Caja de regalo para brownies con lazo satinado"
       }
     ],
@@ -95,7 +95,7 @@
       "pageSize": 6
     },
     "quote": {
-      "priceLabel": "Precio de referencia por pieza; el monto final se confirma al cotizar.",
+      "priceLabel": "Precio estimado para la presentación indicada; puede cambiar según la cotización final.",
       "emailAddress": "info@valeriaherrera.buxdev.com",
       "emailCtaLabel": "Cotizar por correo"
     }
