@@ -22,6 +22,9 @@ function BrandLogo({ brand }: { brand: BrandConfig }) {
         <img
           src={brand.logo}
           alt={brand.logoAlt ?? brand.name}
+          width={720}
+          height={160}
+          decoding="async"
           className="h-auto w-56 max-w-[68vw] sm:w-64 lg:w-72"
         />
       ) : (

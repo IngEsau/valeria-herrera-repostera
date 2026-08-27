@@ -84,6 +84,10 @@ export type ContactContent = {
   sectionId: string;
   title: string;
   description: string;
+  serviceAreaLabel: string;
+  serviceArea: string;
+  hoursLabel: string;
+  hours: string;
   primaryCta: Cta;
   secondaryCta: Cta;
   emailCta: Cta;

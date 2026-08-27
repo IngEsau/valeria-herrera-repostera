@@ -27,8 +27,11 @@ export function AboutSection({ content }: AboutSectionProps) {
               <img
                 src={item.image}
                 alt={item.imageAlt}
+                width={1200}
+                height={900}
                 className="h-full w-full object-cover object-center"
                 loading="lazy"
+                decoding="async"
               />
             </figure>
           ))}

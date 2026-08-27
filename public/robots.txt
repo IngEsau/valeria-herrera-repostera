@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valeriaherrera.buxdev.com/sitemap.xml

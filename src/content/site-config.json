@@ -54,7 +54,7 @@
       "label": "Ver Instagram",
       "href": "https://www.instagram.com/vh.repostera/"
     },
-    "heroImage": "/images/hero/hero-cake.jpg",
+    "heroImage": "/images/hero/hero-cake.webp",
     "heroImageAlt": "Postre artesanal de Valeria Herrera"
   },
   "about": {
@@ -104,6 +104,10 @@
     "sectionId": "contacto",
     "title": "Hablemos de tu pedido",
     "description": "Consulta disponibilidad, presentación y precio final de la pieza que necesitas. Puedes escribir por WhatsApp o correo.",
+    "serviceAreaLabel": "Zona de servicio",
+    "serviceArea": "Puebla, San Pedro Cholula y Momoxpan.",
+    "hoursLabel": "Horario de atención",
+    "hours": "Lunes a viernes, de 7:00 a.m. a 9:00 p.m.",
     "primaryCta": {
       "label": "Escribir por WhatsApp",
       "href": "https://wa.me/5212221845391"

@@ -21,8 +21,11 @@ export function ProductCard({ product, quote }: ProductCardProps) {
         <img
           src={product.image}
           alt={product.imageAlt}
+          width={1200}
+          height={900}
           className="h-full w-full object-cover object-center transition duration-300 hover:scale-[1.03]"
           loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="flex flex-1 flex-col p-5 sm:p-6">

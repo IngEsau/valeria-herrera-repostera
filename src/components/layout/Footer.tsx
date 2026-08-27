@@ -24,6 +24,10 @@ export function Footer({ brand, navigation, content }: FooterProps) {
               <img
                 src={brand.logoStacked}
                 alt={brand.logoAlt ?? brand.name}
+                width={420}
+                height={280}
+                loading="lazy"
+                decoding="async"
                 className="h-auto w-52 sm:w-56 lg:w-64"
               />
             ) : (
