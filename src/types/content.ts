@@ -84,10 +84,6 @@ export type ContactContent = {
   sectionId: string;
   title: string;
   description: string;
-  serviceAreaLabel: string;
-  serviceArea: string;
-  hoursLabel: string;
-  hours: string;
   primaryCta: Cta;
   secondaryCta: Cta;
   emailCta: Cta;
@@ -96,6 +92,10 @@ export type ContactContent = {
 export type FooterContent = {
   brandLine: string;
   copyright: string;
+  serviceAreaLabel: string;
+  serviceArea: string;
+  hoursLabel: string;
+  hours: string;
   instagramUrl?: string;
   whatsappUrl?: string;
   emailUrl?: string;

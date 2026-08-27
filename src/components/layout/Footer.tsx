@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Clock3, Mail, MapPin } from "lucide-react";
 import type {
   BrandConfig,
   FooterContent,
@@ -87,7 +87,40 @@ export function Footer({ brand, navigation, content }: FooterProps) {
           </div>
         </div>
 
-        <p className="mt-20 text-center font-body text-xs leading-6 text-brand-taupe/70 md:mt-24">
+        <div className="mx-auto mt-20 grid max-w-4xl gap-8 border-y border-brand-lavender/15 py-8 sm:grid-cols-2 sm:gap-12 md:mt-24">
+          <div className="flex gap-3">
+            <MapPin
+              className="mt-0.5 size-5 shrink-0 text-brand-lavender"
+              strokeWidth={1.8}
+              aria-hidden="true"
+            />
+            <div>
+              <p className="font-body text-xs font-semibold uppercase text-brand-lavender">
+                {content.serviceAreaLabel}
+              </p>
+              <p className="mt-2 font-body text-sm leading-6 text-brand-taupe/85">
+                {content.serviceArea}
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <Clock3
+              className="mt-0.5 size-5 shrink-0 text-brand-lavender"
+              strokeWidth={1.8}
+              aria-hidden="true"
+            />
+            <div>
+              <p className="font-body text-xs font-semibold uppercase text-brand-lavender">
+                {content.hoursLabel}
+              </p>
+              <p className="mt-2 font-body text-sm leading-6 text-brand-taupe/85">
+                {content.hours}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-16 text-center font-body text-xs leading-6 text-brand-taupe/70 md:mt-20">
           {content.copyright}
         </p>
       </Container>

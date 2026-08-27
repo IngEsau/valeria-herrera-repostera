@@ -1,4 +1,4 @@
-import { Clock3, Mail, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import type { ContactContent } from "../../types/content";
 import { InstagramIcon, WhatsAppIcon } from "../ui/BrandIcons";
 import { ButtonLink } from "../ui/ButtonLink";
@@ -19,38 +19,6 @@ export function ContactSection({ content }: ContactSectionProps) {
           <p className="mt-4 text-base leading-8 text-white/90 sm:text-lg">
             {content.description}
           </p>
-          <div className="mx-auto mt-8 grid max-w-2xl gap-6 border-y border-white/25 py-6 text-left sm:grid-cols-2 sm:gap-10">
-            <div className="flex gap-3">
-              <MapPin
-                className="mt-0.5 size-5 shrink-0 text-white"
-                strokeWidth={1.8}
-                aria-hidden="true"
-              />
-              <div>
-                <p className="font-body text-xs font-semibold uppercase text-white/75">
-                  {content.serviceAreaLabel}
-                </p>
-                <p className="mt-1 font-body text-sm leading-6 text-white">
-                  {content.serviceArea}
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3">
-              <Clock3
-                className="mt-0.5 size-5 shrink-0 text-white"
-                strokeWidth={1.8}
-                aria-hidden="true"
-              />
-              <div>
-                <p className="font-body text-xs font-semibold uppercase text-white/75">
-                  {content.hoursLabel}
-                </p>
-                <p className="mt-1 font-body text-sm leading-6 text-white">
-                  {content.hours}
-                </p>
-              </div>
-            </div>
-          </div>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <ButtonLink
               href={content.primaryCta.href}

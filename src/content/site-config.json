@@ -104,10 +104,6 @@
     "sectionId": "contacto",
     "title": "Hablemos de tu pedido",
     "description": "Consulta disponibilidad, presentación y precio final de la pieza que necesitas. Puedes escribir por WhatsApp o correo.",
-    "serviceAreaLabel": "Zona de servicio",
-    "serviceArea": "Puebla, San Pedro Cholula y Momoxpan.",
-    "hoursLabel": "Horario de atención",
-    "hours": "Lunes a viernes, de 7:00 a.m. a 9:00 p.m.",
     "primaryCta": {
       "label": "Escribir por WhatsApp",
       "href": "https://wa.me/5212221845391"
@@ -124,6 +120,10 @@
   "footer": {
     "brandLine": "Valeria Herrera",
     "copyright": "© 2026 Valeria Herrera. Todos los derechos reservados.",
+    "serviceAreaLabel": "Zona de servicio",
+    "serviceArea": "Puebla, San Pedro Cholula y Momoxpan.",
+    "hoursLabel": "Horario de atención",
+    "hours": "Lunes a viernes, de 7:00 a.m. a 9:00 p.m.",
     "instagramUrl": "https://www.instagram.com/vh.repostera/",
     "whatsappUrl": "https://wa.me/5212221845391",
     "emailUrl": "mailto:info@valeriaherrera.buxdev.com"
