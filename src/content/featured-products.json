@@ -9,8 +9,8 @@
     "servings": "Rendimiento aprox.: 8 a 10 personas",
     "image": "/images/products/editorial/pastel-chocomango.webp",
     "imageAlt": "Pastel de chocolate decorado con una flor de mango",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20el%20pastel%20de%20chocolate%20con%20mango",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Pastel%20de%20chocolate%20con%20mango",
     "featured": true
   },
   {
@@ -23,8 +23,8 @@
     "servings": "Rendimiento aprox.: 10 a 12 personas",
     "image": "/images/products/editorial/pastel-graduacion.webp",
     "imageAlt": "Pastel de graduación decorado con frutos rojos, soletas y listón",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20un%20pastel%20de%20graduacion",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Pastel%20de%20graduaci%C3%B3n",
     "featured": true
   },
   {
@@ -37,8 +37,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/tartaletas-limon.webp",
     "imageAlt": "Tartaletas de limón decoradas con merengue tostado",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20tartaleta%20de%20limon",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Tartaleta%20de%20lim%C3%B3n",
     "featured": true
   },
   {
@@ -51,8 +51,8 @@
     "servings": "Rendimiento aprox.: 2 a 4 personas",
     "image": "/images/products/editorial/baguette-artesanal.webp",
     "imageAlt": "Baguette artesanal dorada con cubierta de frutos secos",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20baguette%20artesanal",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Baguette%20artesanal",
     "featured": false
   },
   {
@@ -65,8 +65,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/brownies-caja.webp",
     "imageAlt": "Caja de regalo con brownies y lazo satinado",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20un%20brownie%20artesanal",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Brownie%20artesanal",
     "featured": false,
     "catalogLast": true
   },
@@ -80,8 +80,8 @@
     "servings": "Rendimiento aprox.: 5 a 10 personas",
     "image": "/images/products/editorial/cheesecake-fresa.webp",
     "imageAlt": "Cheesecake con cubierta de fresa, fresas frescas y chocolate",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20un%20cheesecake%20de%20fresa",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Cheesecake%20de%20fresa",
     "featured": false
   },
   {
@@ -94,8 +94,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/muffins.webp",
     "imageAlt": "Muffins surtidos con fruta y chispas de chocolate",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20un%20muffin%20artesanal",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Muffin%20surtido",
     "featured": false
   },
   {
@@ -108,8 +108,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/oreja-artesanal.webp",
     "imageAlt": "Orejas artesanales de hojaldre con bordes caramelizados",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20oreja%20artesanal",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Oreja%20artesanal",
     "featured": false
   },
   {
@@ -122,8 +122,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/pan-artesanal.webp",
     "imageAlt": "Selección de croissants y panes artesanales con almendra",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20pieza%20de%20pan%20dulce%20artesanal",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Pan%20dulce%20artesanal",
     "featured": false
   },
   {
@@ -136,8 +136,8 @@
     "servings": "Rendimiento aprox.: 8 a 10 personas",
     "image": "/images/products/editorial/pastel-capuchino.webp",
     "imageAlt": "Pastel capuchino con crema, cacao, cerezas y chocolate",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20un%20pastel%20capuchino",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Pastel%20capuchino",
     "featured": false
   },
   {
@@ -150,8 +150,8 @@
     "servings": "Rendimiento aprox.: 8 a 10 personas",
     "image": "/images/products/editorial/tarta-grande-frutas.webp",
     "imageAlt": "Tarta grande cubierta con frutos rojos y azúcar glass",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20tarta%20grande%20de%20frutos%20rojos",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Tarta%20grande%20de%20frutos%20rojos",
     "featured": false
   },
   {
@@ -164,8 +164,8 @@
     "servings": "Rendimiento aprox.: 8 a 10 personas",
     "image": "/images/products/editorial/pastel-volteado-pina.webp",
     "imageAlt": "Pastel volteado decorado con rebanadas de piña y cerezas",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20un%20pastel%20volteado%20de%20pina",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Pastel%20volteado%20de%20pi%C3%B1a",
     "featured": false
   },
   {
@@ -178,8 +178,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/tartaleta-salada.webp",
     "imageAlt": "Tartaletas saladas individuales con relleno horneado",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20tartaleta%20salada",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Tartaleta%20salada",
     "featured": false
   },
   {
@@ -192,8 +192,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/tartaleta-uva.webp",
     "imageAlt": "Tartaleta individual con crema y uvas verdes",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20tartaleta%20de%20uva",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Tartaleta%20de%20uva",
     "featured": false
   },
   {
@@ -206,8 +206,8 @@
     "servings": "Porción individual: 1 persona",
     "image": "/images/products/editorial/tartaleta-frutas.webp",
     "imageAlt": "Tartaletas individuales decoradas con variedad de fruta fresca",
-    "ctaLabel": "Cotizar por WhatsApp",
-    "ctaHref": "https://wa.me/5212221845391?text=Hola,%20quiero%20cotizar%20una%20tartaleta%20de%20frutas",
+    "ctaLabel": "Cotizar por correo",
+    "ctaHref": "mailto:info@valeriaherrera.buxdev.com?subject=Cotizaci%C3%B3n%3A%20Tartaleta%20de%20frutas",
     "featured": false
   }
 ]

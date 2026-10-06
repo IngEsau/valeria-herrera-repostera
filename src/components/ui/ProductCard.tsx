@@ -3,7 +3,6 @@ import type {
   FeaturedProduct,
   ProductQuoteContent,
 } from "../../types/content";
-import { WhatsAppIcon } from "./BrandIcons";
 import { ButtonLink } from "./ButtonLink";
 
 type ProductCardProps = {
@@ -12,11 +11,8 @@ type ProductCardProps = {
 };
 
 export function ProductCard({ product, quote }: ProductCardProps) {
-  const emailSubject = encodeURIComponent(`Cotización: ${product.name}`);
-  const emailHref = `mailto:${quote.emailAddress}?subject=${emailSubject}`;
-
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-soft">
+    <article id={product.id} className="flex h-full scroll-mt-28 flex-col overflow-hidden rounded-lg bg-white shadow-soft">
       <div className="aspect-[4/3] overflow-hidden bg-brand-cream">
         <img
           src={product.image}
@@ -59,17 +55,9 @@ export function ProductCard({ product, quote }: ProductCardProps) {
             <ButtonLink
               href={product.ctaHref}
               className="w-full px-4"
-              icon={<WhatsAppIcon className="size-4 text-white" />}
+              icon={<Mail className="size-4 text-white" />}
             >
               {product.ctaLabel}
-            </ButtonLink>
-            <ButtonLink
-              href={emailHref}
-              variant="quiet"
-              className="w-full px-3"
-              icon={<Mail className="size-4" strokeWidth={2} />}
-            >
-              {quote.emailCtaLabel}
             </ButtonLink>
           </div>
         </div>

@@ -48,7 +48,7 @@
     "description": "Cada pieza está hecha con detalle, sabor y calidez para acompañar tus momentos especiales.",
     "primaryCta": {
       "label": "Hacer un pedido",
-      "href": "https://wa.me/5212221845391"
+      "href": "mailto:info@valeriaherrera.buxdev.com"
     },
     "secondaryCta": {
       "label": "Ver Instagram",
@@ -103,10 +103,10 @@
   "contact": {
     "sectionId": "contacto",
     "title": "Hablemos de tu pedido",
-    "description": "Consulta disponibilidad, presentación y precio final de la pieza que necesitas. Puedes escribir por WhatsApp o correo.",
+    "description": "Consulta disponibilidad, presentación y precio final de la pieza que necesitas. Puedes escribir por correo.",
     "primaryCta": {
-      "label": "Escribir por WhatsApp",
-      "href": "https://wa.me/5212221845391"
+      "label": "Escribir por correo",
+      "href": "mailto:info@valeriaherrera.buxdev.com"
     },
     "secondaryCta": {
       "label": "Ir a Instagram",
@@ -125,7 +125,6 @@
     "hoursLabel": "Horario de atención",
     "hours": "Lunes a viernes, de 7:00 a.m. a 9:00 p.m.",
     "instagramUrl": "https://www.instagram.com/vh.repostera/",
-    "whatsappUrl": "https://wa.me/5212221845391",
     "emailUrl": "mailto:info@valeriaherrera.buxdev.com"
   }
 }

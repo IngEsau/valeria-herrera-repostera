@@ -97,7 +97,6 @@ export type FooterContent = {
   hoursLabel: string;
   hours: string;
   instagramUrl?: string;
-  whatsappUrl?: string;
   emailUrl?: string;
 };
 

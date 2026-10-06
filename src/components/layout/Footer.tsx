@@ -1,10 +1,8 @@
-import { Clock3, Mail, MapPin } from "lucide-react";
 import type {
   BrandConfig,
   FooterContent,
   NavigationItem,
 } from "../../types/content";
-import { InstagramIcon, WhatsAppIcon } from "../ui/BrandIcons";
 import { ButtonLink } from "../ui/ButtonLink";
 import { Container } from "../ui/Container";
 
@@ -18,8 +16,12 @@ export function Footer({ brand, navigation, content }: FooterProps) {
   return (
     <footer className="border-t border-brand-lavender/15 bg-white">
       <Container className="py-20 sm:py-24 lg:py-28">
-        <div className="grid gap-16 md:grid-cols-[1.1fr_0.8fr_0.8fr] md:items-start md:gap-12 lg:gap-24">
-          <div className="max-w-sm">
+        <div className="grid gap-16 md:grid-cols-2 md:items-start md:gap-12 lg:grid-cols-[1fr_0.7fr_1.2fr_1fr] lg:gap-8 xl:gap-12">
+          <a
+            href="#inicio"
+            aria-label={`${brand.name}: ir al inicio`}
+            className="block w-fit max-w-full rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-lavender"
+          >
             {brand.logoStacked ? (
               <img
                 src={brand.logoStacked}
@@ -35,7 +37,7 @@ export function Footer({ brand, navigation, content }: FooterProps) {
                 {content.brandLine}
               </p>
             )}
-          </div>
+          </a>
 
           <div>
             <h2 className="font-body text-sm font-semibold uppercase text-brand-lavender">
@@ -60,18 +62,9 @@ export function Footer({ brand, navigation, content }: FooterProps) {
             </h2>
             <div className="mt-6 flex flex-col items-start gap-3">
               <ButtonLink
-                href={content.whatsappUrl}
-                variant="quiet"
-                className="!px-0"
-                icon={<WhatsAppIcon className="size-4" />}
-              >
-                WhatsApp
-              </ButtonLink>
-              <ButtonLink
                 href={content.emailUrl}
                 variant="quiet"
-                className="max-w-full !px-0"
-                icon={<Mail className="size-4" strokeWidth={2} />}
+                className="max-w-full !px-0 break-all text-left"
               >
                 {content.emailUrl?.replace("mailto:", "")}
               </ButtonLink>
@@ -79,41 +72,25 @@ export function Footer({ brand, navigation, content }: FooterProps) {
                 href={content.instagramUrl}
                 variant="quiet"
                 className="!px-0"
-                icon={<InstagramIcon className="size-4" />}
               >
                 Instagram
               </ButtonLink>
             </div>
           </div>
-        </div>
-
-        <div className="mx-auto mt-20 grid max-w-4xl gap-8 border-y border-brand-lavender/15 py-8 sm:grid-cols-2 sm:gap-12 md:mt-24">
-          <div className="flex gap-3">
-            <MapPin
-              className="mt-0.5 size-5 shrink-0 text-brand-lavender"
-              strokeWidth={1.8}
-              aria-hidden="true"
-            />
+          <div className="space-y-8">
             <div>
-              <p className="font-body text-xs font-semibold uppercase text-brand-lavender">
+              <h2 className="font-body text-sm font-semibold uppercase text-brand-lavender">
                 {content.serviceAreaLabel}
-              </p>
-              <p className="mt-2 font-body text-sm leading-6 text-brand-taupe/85">
+              </h2>
+              <p className="mt-6 font-body text-sm leading-7 text-brand-taupe/85">
                 {content.serviceArea}
               </p>
             </div>
-          </div>
-          <div className="flex gap-3">
-            <Clock3
-              className="mt-0.5 size-5 shrink-0 text-brand-lavender"
-              strokeWidth={1.8}
-              aria-hidden="true"
-            />
             <div>
-              <p className="font-body text-xs font-semibold uppercase text-brand-lavender">
+              <h2 className="font-body text-sm font-semibold uppercase text-brand-lavender">
                 {content.hoursLabel}
-              </p>
-              <p className="mt-2 font-body text-sm leading-6 text-brand-taupe/85">
+              </h2>
+              <p className="mt-6 font-body text-sm leading-7 text-brand-taupe/85">
                 {content.hours}
               </p>
             </div>
