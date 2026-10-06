@@ -1,5 +1,6 @@
+import { Mail } from "lucide-react";
 import type { HeroContent } from "../../types/content";
-import { InstagramIcon, WhatsAppIcon } from "../ui/BrandIcons";
+import { InstagramIcon } from "../ui/BrandIcons";
 import { ButtonLink } from "../ui/ButtonLink";
 import { Container } from "../ui/Container";
 
@@ -11,7 +12,7 @@ export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section id="inicio" className="relative isolate overflow-hidden bg-[#FDF5F0]">
       {/* Mobile image layer */}
-      <div className="pointer-events-none absolute bottom-0 inset-x-0 z-0 h-[682px] overflow-hidden sm:h-[712px] lg:hidden">
+      <div className="pointer-events-none absolute bottom-0 inset-x-0 z-0 h-[640px] overflow-hidden sm:h-[670px] lg:hidden">
         <img
           src={content.heroImage}
           alt={content.heroImageAlt}
@@ -21,7 +22,7 @@ export function HeroSection({ content }: HeroSectionProps) {
           className="absolute inset-0 z-0 h-full w-full object-cover object-[76%_42%] sm:object-[72%_42%]"
         />
         <div className="absolute inset-x-0 top-0 z-[1] h-72 bg-gradient-to-b from-[#FDF5F0] via-[#FDF5F0]/70 to-transparent sm:h-80" />
-        <div className="absolute inset-y-0 left-0 z-[1] w-[78%] bg-gradient-to-r from-[#FDF5F0] via-[#FDF5F0]/55 to-transparent sm:w-[68%]" />
+        <div className="absolute inset-y-0 left-0 z-[1] w-[65%] bg-gradient-to-r from-[#FDF5F0] via-[#FDF5F0]/30 to-transparent sm:w-[60%]" />
         <div className="absolute inset-x-0 bottom-0 z-[1] h-24 bg-gradient-to-t from-[#FDF5F0] via-[#FDF5F0]/20 to-transparent" />
       </div>
 
@@ -63,8 +64,8 @@ export function HeroSection({ content }: HeroSectionProps) {
           <div className="relative z-10 mt-5 flex flex-col gap-2.5 sm:flex-row sm:gap-3 lg:mt-8">
             <ButtonLink
               href={content.primaryCta.href}
-              className="!min-h-11 !py-2.5 w-full px-6 sm:w-auto lg:!min-h-12 lg:!py-3 lg:px-8"
-              icon={<WhatsAppIcon className="size-4 text-white" />}
+              className="!min-h-11 !py-2.5 !shadow-none w-full px-6 sm:w-auto lg:!min-h-12 lg:!py-3 lg:!shadow-soft lg:px-8"
+              icon={<Mail className="size-4 text-white" />}
             >
               {content.primaryCta.label}
             </ButtonLink>

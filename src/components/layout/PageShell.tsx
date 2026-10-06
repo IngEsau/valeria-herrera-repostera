@@ -3,6 +3,7 @@ import type {
   BrandConfig,
   Cta,
   FooterContent,
+  FeaturedProduct,
   NavigationItem,
 } from "../../types/content";
 import { Footer } from "./Footer";
@@ -13,6 +14,8 @@ type PageShellProps = {
   navigation: NavigationItem[];
   primaryCta: Cta;
   footer: FooterContent;
+  featuredProducts: FeaturedProduct[];
+  featuredSectionId: string;
   children: ReactNode;
 };
 
@@ -21,11 +24,19 @@ export function PageShell({
   navigation,
   primaryCta,
   footer,
+  featuredProducts,
+  featuredSectionId,
   children,
 }: PageShellProps) {
   return (
     <div className="min-h-screen bg-brand-cream font-body text-brand-taupe">
-      <Header brand={brand} navigation={navigation} primaryCta={primaryCta} />
+      <Header
+        brand={brand}
+        navigation={navigation}
+        primaryCta={primaryCta}
+        featuredProducts={featuredProducts}
+        featuredSectionId={featuredSectionId}
+      />
       <main>{children}</main>
       <Footer brand={brand} navigation={navigation} content={footer} />
     </div>

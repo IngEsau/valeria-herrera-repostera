@@ -12,6 +12,8 @@ export default function App() {
       navigation={siteConfig.navigation}
       primaryCta={siteConfig.hero.primaryCta}
       footer={siteConfig.footer}
+      featuredProducts={featuredProducts.filter((product) => product.featured)}
+      featuredSectionId={siteConfig.featuredProducts.sectionId}
     >
       <HeroSection content={siteConfig.hero} />
       <AboutSection content={siteConfig.about} />

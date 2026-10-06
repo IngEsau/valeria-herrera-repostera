@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import type { BrandConfig, Cta, NavigationItem } from "../../types/content";
-import { WhatsAppIcon } from "../ui/BrandIcons";
+import { Mail, Menu, X } from "lucide-react";
+import type { BrandConfig, Cta, FeaturedProduct, NavigationItem } from "../../types/content";
 import { ButtonLink } from "../ui/ButtonLink";
 import { Container } from "../ui/Container";
+import { MobileNavigation } from "./MobileNavigation";
 
 type HeaderProps = {
   brand: BrandConfig;
   navigation: NavigationItem[];
   primaryCta: Cta;
+  featuredProducts: FeaturedProduct[];
+  featuredSectionId: string;
 };
 
 function BrandLogo({ brand }: { brand: BrandConfig }) {
@@ -59,7 +61,7 @@ function NavigationLinks({
   );
 }
 
-export function Header({ brand, navigation, primaryCta }: HeaderProps) {
+export function Header({ brand, navigation, primaryCta, featuredProducts, featuredSectionId }: HeaderProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
@@ -83,34 +85,35 @@ export function Header({ brand, navigation, primaryCta }: HeaderProps) {
             <button
               type="button"
               aria-label="Cerrar navegación"
-              className="absolute inset-0 bg-brand-taupe/20"
+              className="absolute inset-0 bg-brand-taupe/25 backdrop-blur-sm"
               onClick={() => setIsSidebarOpen(false)}
             />
             <aside className="absolute right-0 top-0 flex h-dvh w-[min(22rem,88vw)] flex-col border-l border-brand-lavender/15 bg-brand-cream px-6 py-6 shadow-soft">
-              <div className="flex items-center justify-between gap-4">
-                <BrandLogo brand={brand} />
+              <div className="flex shrink-0 justify-end">
                 <button
                   type="button"
                   aria-label="Cerrar navegación"
                   onClick={() => setIsSidebarOpen(false)}
-                  className="flex size-10 items-center justify-center rounded-full bg-white text-brand-lavender transition hover:text-brand-cta focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-lavender"
+                  className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white text-brand-lavender transition hover:text-brand-cta focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-lavender"
                 >
                   <X className="size-5" strokeWidth={2} />
                 </button>
               </div>
 
-              <nav aria-label="Navegación móvil" className="mt-10 grid gap-3">
-                <NavigationLinks
+              <div className="mt-6 min-h-0 flex-1 overflow-y-auto">
+                <MobileNavigation
                   navigation={navigation}
+                  featuredProducts={featuredProducts}
+                  featuredSectionId={featuredSectionId}
                   onNavigate={() => setIsSidebarOpen(false)}
                 />
-              </nav>
+              </div>
 
-              <div className="mt-auto">
+              <div className="mt-6 shrink-0 border-t border-brand-taupe/15 pt-6">
                 <ButtonLink
                   href={primaryCta.href}
                   className="w-full px-5"
-                  icon={<WhatsAppIcon className="size-4 text-white" />}
+                  icon={<Mail className="size-4 text-white" />}
                 >
                   {primaryCta.label}
                 </ButtonLink>
@@ -131,7 +134,7 @@ export function Header({ brand, navigation, primaryCta }: HeaderProps) {
           <ButtonLink
             href={primaryCta.href}
             className="justify-self-end px-6 text-sm"
-            icon={<WhatsAppIcon className="size-4 text-white" />}
+            icon={<Mail className="size-4 text-white" />}
           >
             {primaryCta.label}
           </ButtonLink>
