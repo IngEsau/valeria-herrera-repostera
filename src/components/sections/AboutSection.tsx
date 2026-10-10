@@ -48,10 +48,10 @@ export function AboutSection({ content }: AboutSectionProps) {
           <p className="font-heading text-xl font-semibold leading-8 text-brand-lavender sm:text-2xl">
             {content.title}
           </p>
-          <p className="mt-7 text-base leading-8 text-brand-taupe/85 sm:text-lg">
+          <p className="mt-7 font-body text-base leading-8 text-brand-taupe/85 sm:text-lg">
             {content.description}
           </p>
-          <p className="mt-6 text-base leading-8 text-brand-taupe/85">
+          <p className="mt-6 font-body text-base leading-8 text-brand-taupe/85 sm:text-lg">
             {content.secondaryText}
           </p>
           <div className="mt-9">
