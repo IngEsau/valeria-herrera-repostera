@@ -120,6 +120,10 @@
   "footer": {
     "brandLine": "Valeria Herrera",
     "copyright": "© 2026 Valeria Herrera. Todos los derechos reservados.",
+    "developerCredit": {
+      "label": "Desarrollado por Buxdev",
+      "href": "https://buxdev.com"
+    },
     "serviceAreaLabel": "Zona de servicio",
     "serviceArea": "Puebla, San Pedro Cholula y Momoxpan.",
     "hoursLabel": "Horario de atención",

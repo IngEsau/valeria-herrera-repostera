@@ -100,6 +100,14 @@ export function Footer({ brand, navigation, content }: FooterProps) {
         <p className="mt-16 text-center font-body text-xs leading-6 text-brand-taupe/70 md:mt-20">
           {content.copyright}
         </p>
+        <p className="mt-3 text-center font-body text-xs leading-6 text-brand-taupe/70">
+          <a
+            href={content.developerCredit.href}
+            className="rounded-sm underline underline-offset-4 transition hover:text-brand-cta focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-lavender"
+          >
+            {content.developerCredit.label}
+          </a>
+        </p>
       </Container>
     </footer>
   );

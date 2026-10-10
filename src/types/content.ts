@@ -92,6 +92,7 @@ export type ContactContent = {
 export type FooterContent = {
   brandLine: string;
   copyright: string;
+  developerCredit: Cta;
   serviceAreaLabel: string;
   serviceArea: string;
   hoursLabel: string;
